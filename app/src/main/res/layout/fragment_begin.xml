@@ -1,0 +1,247 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f7f7f7"
+    android:orientation="vertical"
+    tools:context="br.com.ilhasoft.rescue.BeginActivity$PlaceholderFragment" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:gravity="bottom"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="330dp" >
+
+            <Button
+                android:id="@+id/btBackgroundCenter"
+                android:layout_width="210dp"
+                android:layout_height="210dp"
+                android:layout_gravity="center"
+                android:background="@drawable/circlebackground" />
+
+            <ImageView
+                android:id="@+id/ivBackgroundInnerBorder"
+                android:layout_width="280dp"
+                android:layout_height="280dp"
+                android:layout_gravity="center"
+                android:background="@drawable/elipse" />
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center" >
+
+                <LinearLayout
+                    android:id="@+id/llCenterTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/center_first"
+                        android:textColor="#fff"
+                        android:textSize="55sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/center_second"
+                        android:textColor="#fff"
+                        android:textSize="24.5sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llCenterAnimation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+					
+                    <FrameLayout 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+	                    <ImageView
+	                        android:id="@+id/ivMao"
+	                        android:layout_width="125.14dp"
+	                        android:layout_height="148.85dp"
+	                        android:background="@drawable/img_mao" />
+	                    
+	                    <ImageView
+	                        android:id="@+id/ivBoca"
+	                        android:layout_width="125.14dp"
+	                        android:layout_height="148.85dp"
+	                        android:background="@drawable/img_boca" />
+                    </FrameLayout>
+
+                    <TextView
+                        android:id="@+id/tvQtdFinal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textColor="#fff"
+                        android:textSize="26sp" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <br.com.ilhasoft.rescue.widget.Arc
+                android:id="@+id/arcDeep"
+                android:layout_width="240dp"
+                android:layout_height="240dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="2dp"
+                android:visibility="visible" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="135dp"
+            android:layout_gravity="center_horizontal|bottom" >
+
+            <LinearLayout
+                android:id="@+id/llButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:translationY="0dp" >
+
+                <FrameLayout
+                    android:id="@+id/flHeart"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp" >
+
+                    <Button
+                        android:id="@+id/btHeart"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/circlebackground" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|bottom"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:layout_width="68.85dp"
+                            android:layout_height="55.71dp"
+                            android:background="@drawable/menu_heart" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="2dp"
+                            android:text="@string/button_heart"
+                            android:textColor="#fff"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/flCall"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="50dp" >
+
+                    <Button
+                        android:id="@+id/btCall"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/circlebackground" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|bottom"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:layout_width="64.14dp"
+                            android:layout_height="41.42dp"
+                            android:background="@drawable/menu_ambulancia" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="2dp"
+                            android:text="@string/button_call"
+                            android:textColor="#fff"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llAmbulancia"
+                android:layout_width="350dp"
+                android:layout_height="135dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:translationY="300dp" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleX="0.7"
+                        android:scaleY="0.7"
+                        android:src="@drawable/linha_ambulancia"
+                        android:translationY="40dp" />
+
+                    <ImageView
+                        android:id="@+id/ivAmbulancia"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleX="0.5"
+                        android:scaleY="0.5"
+                        android:src="@drawable/ambulancia_animacao"
+                        android:translationX="40dp"
+                        android:translationY="20dp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleX="0.5"
+                        android:scaleY="0.5"
+                        android:src="@drawable/icon_bandeira"
+                        android:translationX="282dp"
+                        android:translationY="8dp" />
+                </RelativeLayout>
+                
+                <TextView
+                    android:id="@+id/tvTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textSize="20sp"
+                    android:textColor="#db5436"
+                    android:text="1:00 Min"/>
+                
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/recognizer_fragment_title" />
+
+        <org.opencv.android.JavaCameraView
+            android:id="@+id/fd_activity_surface_view"
+            android:layout_width="320px"
+            android:layout_height="240px" />
+
+        <TextView
+            android:id="@+id/tvTempoRestante"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+</FrameLayout><!-- From: file:/C:/Users/Leandro/AndroidstudioProjects/Rescue/app/src/main/res/layout/fragment_recognizer.xml -->

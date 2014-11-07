@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Rescue</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="tomada_fragment_title">Escolha uma tomada disponível</string>
+    <string name="tomada_nome">Tomada</string>
+    <string name="recognizer_fragment_title">Posicione seu rosto em frente à tela para assistir a publicidade</string>
+    <string name="sensor_mac">SENSOR-MAC:0080</string>
+    <string name="command_ffd">Putini(\"Configura\",\"Cadastro\",\"FFD\",\"%1s\")</string>
+    <string name="command_pan">Putini(\"Configura\",\"Cadastro\",\"PAN\",\"%1s\")</string>
+    <string name="command_set">Putini(\"%1$s\",\"Set\",\"%2$s\")</string>
+    <string name="title_activity_begin">BeginActivity</string>
+    <string name="start_heart_procedure">Start</string>
+    <string name="stop_heart_procedure">Stop</string>
+    <string name="title_activity_finger">FingerActivity</string>
+    <string name="default_text">--</string>
+    <string name="title_activity_urine">UrineActivity</string>
+    
+    <string name="button_repeat">Repeat</string>
+    <string name="button_send">SendGrid</string>
+    <string name="button_heart">Heart</string>
+    <string name="button_call">Call</string>
+    
+    <string name="center_first">START</string>
+    <string name="center_second">REANIMATION</string>
+    
+    <string name="ambulancia_time">%1$s:%2$s Min</string>
+    <string name="tap_to_continue">Tap to continue</string>
+    
+    <string name="url_sensor">http://dca.telefonicabeta.com/m2m/v2/services/pznad2rxa48x/assets/pznad2rxa48x/</string>
+    <string name="url_envia_dados">http://192.168.10.70:8081/consumo/batimento/envia</string>
+    
+</resources>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.com.ilhasoft.rescue"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="21" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-feature
+        android:name="android.hardware.sensor.accelerometer"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature android:name="android.hardware.camera.flash" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.front"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.front.autofocus"
+        android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icone"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="br.com.ilhasoft.rescue.BeginActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service android:name="br.com.ilhasoft.saudeplus.service.ListenService" >
+            <intent-filter>
+                <action android:name="br.com.ilhasoft.saudeplus.service.LISTEN_SERVICE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+
+        <receiver android:name="br.com.ilhasoft.saudeplus.service.CloseSensorReceiver" >
+            <intent-filter>
+                <action android:name="br.com.ilhasoft.saudeplus.CloseSensorReceiver" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="br.com.ilhasoft.rescue.MainActivity"
+            android:label="@string/title_activity_begin"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="br.com.ilhasoft.rescue.HeartActivity"
+            android:label="@string/title_activity_begin"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="br.com.ilhasoft.rescue.FingerActivity"
+            android:label="@string/title_activity_finger"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="br.com.ilhasoft.rescue.UrineActivity"
+            android:label="@string/title_activity_urine"
+            android:screenOrientation="portrait" >
+        </activity>
+    </application>
+
+</manifest>
