@@ -166,7 +166,7 @@ public class HeartFragment extends Fragment implements SensorEventListener {
 			pctProgress = (100 / MAX_AXIS_Y) * y;
 		}
 		
-		//Faz a animação da bolinha
+		//Faz a anima√ß√£oo da bolinha
 		ArcAnim arcAnimation = new ArcAnim(arcProgress, -1 * (float) (3.6 * pctProgress));
 		arcAnimation.setDuration(50);
 //		arcAnimation.setInterpolator(new AccelerateInterpolator());

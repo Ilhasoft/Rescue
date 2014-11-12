@@ -349,7 +349,7 @@ public class BeginFragment extends Fragment implements SensorEventListener {
 		    				ivBackgroundInnerBorder.setBackgroundResource(R.drawable.elipse_azul);
 		    				rotationBorder.start();
 		    				
-		    				//Faz a animação da bolinha
+		    				//Faz a anima√ß√£o da bolinha
 		    				ArcAnim arcAnimation = new ArcAnim(arcDeep, -1 * (float) (3.6 * -100));
 		    				arcAnimation.setDuration(350);
 		    				arcAnimation.setInterpolator(new LinearInterpolator());
@@ -400,7 +400,7 @@ public class BeginFragment extends Fragment implements SensorEventListener {
 					pctProgress = (100 / MAX_AXIS_Y) * y;
 				}
 				
-				//Faz a animação da bolinha
+				//Faz a anima√ß√£o da bolinha
 				ArcAnim arcAnimation = new ArcAnim(arcDeep, -1 * (float) (3.6 * pctProgress));
 				arcAnimation.setDuration(50);
 				arcAnimation.setInterpolator(new LinearInterpolator());
